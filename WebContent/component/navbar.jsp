@@ -23,8 +23,8 @@
         </li>-->
       </ul>
       
-        <!-- <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit">Login<a>-->
-        <a href="register.jsp" class="btn btn-light my-2 my-sm-0" type="submit">Register</a>
+        <a href="login.jsp" class="btn btn-light " type="submit">Login<a>
+        <a href="register.jsp" class="btn btn-light" type="submit">Register</a>
      
     </div>
   </div>

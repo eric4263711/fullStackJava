@@ -17,7 +17,7 @@
     <title>Home Page</title>
     <%@ include file="component/component.jsp" %>
   </head>
-  <body>
+  <body >
     <%@ include file="component/navbar.jsp" %>
     <div class="container-fluid back-img">
        <div class="text-center">
