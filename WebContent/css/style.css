@@ -1,0 +1,12 @@
+.bg-custom{
+	background: #2e7d32
+}
+.navbar .nav-item .nav-link{
+	font-size: 20px;
+	color: while;
+}
+.navbar-custom .nav-item:hover .nav-link{
+	background: while;
+	color: black;
+	border-radius: 10px
+}
