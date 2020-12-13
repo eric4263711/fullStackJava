@@ -21,8 +21,9 @@
     <%@ include file="component/navbar.jsp" %>
     <div class="container-fluid back-img">
        <div class="text-center">
-           <h1 class="btn-light">Film, serie TV e tanto altro</h1>
-        </div>
+			<h1 class="btn-light">Film, serie TV e tanto altro</h1>
+
+		</div>
     </div>
     
     <%@ include file="component/footer.jsp" %>
