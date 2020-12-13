@@ -23,7 +23,7 @@
         </li>
       </ul>
       
-        <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit">Login<a>
+        <!-- <a class="btn btn-light my-2 my-sm-0 mr-2" type="submit">Login<a>-->
         <a class="btn btn-light my-2 my-sm-0" type="submit">Register</a>
      
     </div>
