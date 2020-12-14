@@ -10,7 +10,7 @@ public class UserDb {
 	public UserDb(Connection con) {
 		this.con = con;
 	}
-	public boolean savaUser(User user) {
+	public boolean saveUser(User user) {
 		boolean set = false;
 		try {
 			String query="insert into user(name,email,password) values(?,?,?)";
@@ -30,5 +30,4 @@ public class UserDb {
 		return set;
 	}
 	
-
 }
