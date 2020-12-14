@@ -18,15 +18,15 @@
 					     <h4>Registration</h4>
 					 </div>
 						<div class="card-body">
-							<form>
+							<form action="RegisterServlet" method="post">
 							    <div class="mb-1">
-									<label for="exampleInputEmail1" class="form-label">Enter full name
-										</label> <input type="name" class="form-control"
+									<label for="exampleInputEmail1" class="form-label">Enter full name</label>
+										<input type="name" class="form-control"
 										id="exampleInputEmail1" aria-describedby="emailHelp">
 								</div>
 								<div class="mb-3">
-									<label for="exampleInputEmail1" class="form-label">Enter email
-										address</label> <input type="email" class="form-control"
+									<label for="exampleInputEmail1" class="form-label">Enter email address</label> 
+										<input type="email" class="form-control"
 										id="exampleInputEmail1" aria-describedby="emailHelp">
 								</div>
 								<div class="mb-3">
