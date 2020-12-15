@@ -14,7 +14,7 @@ import org.apache.catalina.UserDatabase;
 
 public class RegisterServlet extends HttpServlet {
 	
-	public void processRequest(HttpServletRequest request,HttpServletResponse response)
+	public void doPostt(HttpServletRequest request,HttpServletResponse response)
 			throws ServletException, IOException {
 	        response.setContentType("text/html;charset-UTF-8");
 	        PrintWriter out = response.getWriter();
@@ -48,6 +48,7 @@ public class RegisterServlet extends HttpServlet {
 				}
           }
 	      catch(IOException e) {
+	    	  e.printStackTrace();
 	    	  
 	      }
 	}
