@@ -4,14 +4,7 @@
 <html>
   <head>
     <style type="text/css">
-        .back-img{
-	background:url("img/images.jpeg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	width: 100%;
-	height: 80vh;
-	
-}
+        
     </style>
     <meta charset="UTF-8">
     <title>Home Page</title>
@@ -19,9 +12,9 @@
   </head>
   <body >
     <%@ include file="component/navbar.jsp" %>
-    <div class="container-fluid back-img">
+    <div class="container-fluid div-color">
        <div class="text-center">
-			<h1 class="btn-light">Film, serie TV e tanto altro</h1>
+			<h1>Film, Serie TV e Tant'altro</h1>
 
 		</div>
     </div>

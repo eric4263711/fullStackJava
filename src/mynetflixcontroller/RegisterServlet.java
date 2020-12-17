@@ -1,55 +1,53 @@
-package mynetflix;
+package mynetflixcontroller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.catalina.UserDatabase;
+import mynetflix.ConnectionDb;
+import mynetflix.UserDb;
+import mynetflixmodel.User;
 
 public class RegisterServlet extends HttpServlet {
 	
-	public void doPostt(HttpServletRequest request,HttpServletResponse response)
+	
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException{
+		 doPost(req, resp);
+	}
+	public void doPost(HttpServletRequest request,HttpServletResponse response)
 			throws ServletException, IOException {
-	        response.setContentType("text/html;charset-UTF-8");
+	        response.setContentType("text/html");
 	        PrintWriter out = response.getWriter();
 	    	 try{
-	    		 out.println("<!DOCTYPE html>");
-	    		 out.println("<html>");
-	    		 out.println("<head>");
-	    		 out.println("<title>Servlet RegistrerServlet</title>");
-	    		 out.println("</head>");
-	    		 out.println("<body>");
-	    	 
+	    		
 				String name = request.getParameter("name");
 				String email = request.getParameter("email");
 				String password = request.getParameter("password");
 				// make user object
-				User userModel = new User(name, email, password);
-				
-				
-				out.println("</body>");
-				out.println("</html>");
+				User userModel = new User(name,email, password);
 
 				// create a database model
 				UserDb regUser = new UserDb(ConnectionDb.getConnection());
 				if (regUser.saveUser(userModel)) {
-					response.sendRedirect("index.jsp");
-				} else {
+					RequestDispatcher dispatcher = request.getRequestDispatcher("registerDetail.jsp");
+					dispatcher.forward(request, response);
+				}
+				else {
 					String errorMessage = "User Available";
 					HttpSession regSession = request.getSession();
 					regSession.setAttribute("RegError", errorMessage);
-					response.sendRedirect("register.jsp");
+					RequestDispatcher dispatcher = request.getRequestDispatcher("register.jsp");
+					dispatcher.forward(request, response);
 				}
           }
-	      catch(IOException e) {
-	    	  e.printStackTrace();
-	    	  
-	      }
+	      catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 }	

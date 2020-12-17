@@ -7,25 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a href="index.jsp" class="nav-link active" aria-current="page" href="#">
+          <a href="index.jsp" class="nav-link active" aria-current="page">
                  <i class="fa fa-home" aria-hidden="true"></i>Home
           </a>
-        <!--</li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-film" aria-hidden="true"></i>Film</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="#">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrello
-           </a>
-        </li>-->
       </ul>
-      
-        <!--  <a href="login.jsp" class="btn btn-info" " type="submit">Login<a>-->
-        <a href="register.jsp" class="btn btn-outline-warning" type="submit">Register</a>
-     
+       
+       <a href="catalogo.jsp" class="btn btn-primary btn-lg" type="submit">Catalogo<a>
+       
     </div>
   </div>
 </nav>

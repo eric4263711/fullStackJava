@@ -1,4 +1,4 @@
-package mynetflix;
+package mynetflixmodel;
 
 public class User {
 	
