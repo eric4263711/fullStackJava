@@ -2,6 +2,9 @@ package mynetflix;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import mynetflixmodel.User;
 
 public class UserDb {
 	
@@ -13,9 +16,9 @@ public class UserDb {
 	public boolean saveUser(User user) {
 		boolean set = false;
 		try {
-			String query="insert into user(name,email,password) values(?,?,?)";
+			String query="insert into user(name,email,password)values(?,?,?)";
 			
-			PreparedStatement pt = this.con.prepareStatement(query);
+			PreparedStatement pt = con.prepareStatement(query);
 			
 			pt.setString(1, user.getName());
 			pt.setString(2, user.getEmail());
@@ -24,7 +27,8 @@ public class UserDb {
 			pt.executeUpdate();
 			set=true;
 		}
-		catch(Exception e ) {
+		
+		catch(SQLException e) {
 			e.printStackTrace();
 		}
 		return set;
