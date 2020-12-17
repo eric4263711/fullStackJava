@@ -17,11 +17,10 @@ import mynetflixmodel.User;
 public class RegisterServlet extends HttpServlet {
 	
 	
-	public void doGet(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException{
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException{
 		 doPost(req, resp);
 	}
-	public void doPost(HttpServletRequest request,HttpServletResponse response)
-			throws ServletException, IOException {
+	public void doPost(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
 	        response.setContentType("text/html");
 	        PrintWriter out = response.getWriter();
 	    	 try{
