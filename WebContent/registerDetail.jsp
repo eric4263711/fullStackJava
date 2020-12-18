@@ -11,11 +11,11 @@
     <%@ include file="component/header.jsp" %>
     <div action class="container-fluid div-color">
       <div class="text-center">
-           <h1>registrazione andato a buon fine!</h1>
+           <h1>Registrazione confermata!</h1>
       </div>
       <div class="d-grid col-3 mx-auto ">
            
-            <a href="login.jsp" class="btn btn-primary" type="submit">Login<a>
+            <a href="login.jsp" class="btn btn-primary lg-color" type="submit">Login<a>
       </div>
     </div>
     <%@ include file="component/footer.jsp"%>

@@ -18,3 +18,7 @@
 .div-detail{
 	background-image: linear-gradient(to right top, #78c35b, #9acc78, #b6d496, #cfddb6, #e3e7d8);
 }
+.lg-color{
+	color: rosso;
+	border-raduis:10px;
+}

@@ -11,28 +11,38 @@
    <%@ include file="component/navbar.jsp" %>
 	<div class="container-fluid  div-color">
 		<div class="row">
-			<div class="col-md-4 offset-md-4 ">
-				<div class="card mt-4">
+			<div class="col-md-5 offset-md-4 ">
+				<div class="card mt-1">
 					<div class="card-header text-center text-white bg-custom">
 					     <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
-					     <h4>Registration</h4>
+					     <h5>Registration</h5>
 					 </div>
 						<div class="card-body">
-							<form action="RegisterServlet" method="post">
-							    <div class="mb-1">
-									<label for="exampleInputEmail1" class="form-label">Enter full name</label>
+							<form class="form-horizontal" action="RegisterServlet" method="post">
+							    <div class="mb-0">
+									<label for="exampleInputName" class="col-form-label-sm-3">Name</label>
 										<input type="text" name="name" class="form-control"
-										id="exampleInputEmail1" aria-describedby="emailHelp">
+										id="exampleInputName" aria-describedby="emailHelp">
 								</div>
-								<div class="mb-3">
-									<label for="exampleInputEmail1" class="form-label">Enter email address</label> 
+								<div class="mb-0">
+									<label for="exampleInputCognome" class="col-form-label-sm-3">Cognome</label>
+										<input type="text" name="cognome" class="form-control"
+										id="exampleInputCognome" aria-describedby="cognomeHelp">
+								</div>
+								<div class="mb-0">
+									<label for="exampleInputEmailAddress" class="col-form-label-sm-3">Email address</label> 
 										<input type="text" name="email" class="form-control"
 										id="exampleInputEmail1" aria-describedby="emailHelp">
 								</div>
-								<div class="mb-3">
-									<label for="exampleInputPassword1" class="form-label">Enter Password</label>
+								<div class="mb-0">
+									<label for="exampleInputUsername" class="col-form-label-sm-3">Username</label> 
+										<input type="text" name="username" class="form-control"
+										id="exampleInputUsername" aria-describedby="usernameHelp">
+								</div>
+								<div class="mb-0">
+									<label for="exampleInputPassword" class="col-form-label-sm-3">Password</label>
 									<input type="password"name="password" class="form-control"
-										id="exampleInputPassword1">
+										id="exampleInputPassword">
 								</div>
 								<button type="submit" class="btn btn-primary">Register</button>
 							</form>

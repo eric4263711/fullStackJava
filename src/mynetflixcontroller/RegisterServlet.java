@@ -26,10 +26,12 @@ public class RegisterServlet extends HttpServlet {
 	    	 try{
 	    		
 				String name = request.getParameter("name");
+				String cognome = request.getParameter("cognome");
 				String email = request.getParameter("email");
+				String username= request.getParameter("username");
 				String password = request.getParameter("password");
 				// make user object
-				User userModel = new User(name,email, password);
+				User userModel = new User(name,cognome,email,username, password);
 
 				// create a database model
 				UserDb regUser = new UserDb(ConnectionDb.getConnection());

@@ -21,8 +21,10 @@ public class UserDb {
 			PreparedStatement pt = con.prepareStatement(query);
 			
 			pt.setString(1, user.getName());
-			pt.setString(2, user.getEmail());
-			pt.setString(3, user.getPassword());
+			pt.setString(2, user.getCognome());
+			pt.setString(3, user.getEmail());
+			pt.setString(4, user.getUsername());
+			pt.setString(5, user.getPassword());
 			
 			pt.executeUpdate();
 			set=true;
